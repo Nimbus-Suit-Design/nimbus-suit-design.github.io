@@ -1,0 +1,251 @@
+body {
+	padding-bottom: 215px;
+	font-size: 14px;
+	font-family: Helvetica, Arial;
+	background: rgb(253, 249, 243);
+	color: #cca676;
+}
+
+select {
+	color: #cca676;
+}
+
+ul, li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	color: #E1433A;
+}
+
+.default-button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+	box-shadow:inset 0px 1px 0px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e1433a), color-stop(1, #bc3315));
+	background:-moz-linear-gradient(top, #e1433a 5%, #bc3315 100%);
+	background:-webkit-linear-gradient(top, #e1433a 5%, #bc3315 100%);
+	background:-o-linear-gradient(top, #e1433a 5%, #bc3315 100%);
+	background:-ms-linear-gradient(top, #e1433a 5%, #bc3315 100%);
+	background:linear-gradient(to bottom, #e1433a 5%, #bc3315 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e1433a', endColorstr='#bc3315',GradientType=0);
+	background-color:#e1433a;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #942911;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+}
+.default-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #e1433a));
+	background:-moz-linear-gradient(top, #bc3315 5%, #e1433a 100%);
+	background:-webkit-linear-gradient(top, #bc3315 5%, #e1433a 100%);
+	background:-o-linear-gradient(top, #bc3315 5%, #e1433a 100%);
+	background:-ms-linear-gradient(top, #bc3315 5%, #e1433a 100%);
+	background:linear-gradient(to bottom, #bc3315 5%, #e1433a 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#e1433a',GradientType=0);
+	background-color:#bc3315;
+}
+.default-button:active {
+	position:relative;
+	top:1px;
+}
+
+.page-title {
+	padding: 10px;
+	color: #E1433A;
+	font-size: 20px;
+	text-align: center;
+}
+
+.page-title .logo {
+	width: 200px;
+	margin-bottom: 10px;
+}
+
+.models {
+	margin: 10px;
+	padding: 10px;
+	background: #FAF2E7;
+	border: dashed 1px #A49B86;
+}
+
+.fields-suit {
+	margin: 10px;
+	border: 0;
+	padding: 0 0 20px 0;
+	border-color: #CCC;
+}
+
+.fields-suit legend {
+	font-size: 18px;
+	color: #008CD3;
+	font-weight: bold;
+}
+
+.fields-suit .type-suit {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.suits {
+	overflow: hidden;
+	width: 100%
+}
+
+.suits li {
+	float: left;
+	text-align: center;
+	border: dashed 1px #008CD3;
+	background: #FFF;
+	margin: 10px;
+	padding: 10px;
+}
+
+.suits li .title {
+	font-size: 14px;
+	color: #E1433A;
+}
+
+.suits li .remove {
+	margin-top: 15px;
+}
+
+.suit {
+	display: block;
+	margin: 0 auto;
+	width: 500px;
+	height: 500px;
+}
+
+.suit .part {
+	stroke-width: 1;
+	stroke: #CCC;
+	cursor: pointer !important;
+	-webkit-transition: fill 0.5s;
+	-moz-transition: fill 0.5s;
+	-ms-transition: fill 0.5s;
+	-o-transition: fill 0.5s;
+	transition: fill 0.5s;
+	fill: none;
+}
+
+.suit-bottom {
+	padding-top: 15px;
+}
+
+#type-filter.cordura .suit .part[data-type="cordura"],
+#type-filter.spandex .suit .part[data-type="spandex"],
+#type-filter.poliester .suit .part[data-type="poliester"] {
+	stroke-width: 1;
+	stroke: #000;
+}
+
+.suit .customizable {
+	fill: rgb(255, 255, 255);
+}
+
+.colors {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: fixed;
+	background: rgba(164, 155, 134, 0.9);
+	width: 100%;
+	bottom: 0;
+	padding: 10px;
+	padding-left: 60px;
+	color: #565043;
+}
+
+.colors h3 {
+	margin: 0;
+	font-size: 12px
+}
+
+.colors .options {
+	overflow: hidden;
+	padding-bottom: 6px
+}
+
+.selected-color {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border: solid 1px #CCC;
+	background-color: #FFF;
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.colors li {
+	float: left;
+	padding: 2px;
+}
+
+.colors button {
+	float: left;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	border: solid 1px #CCC;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+
+.content-section {
+	padding: 10px 10px 30px;
+	border-bottom: dashed 1px #A49B86;
+}
+
+.content-section .title {
+	margin-bottom: 10px;
+	color: #E1433A;
+}
+
+.content-section p {
+	line-height: 160%;
+}
+
+.saved-link {
+	display: block;
+	width: 100%;
+	height: 60px;
+	margin-top: 10px;
+	font-size: 11px;
+}
+
+.footer {
+	padding: 30px 10px 0 0;
+	font-size: 10px;
+	text-align: right;
+}
+
+.footer a {
+	display: inline-block;
+	padding-right: 25px;
+	height: 30px;
+	line-height: 30px;
+	background: url('../images/grifo.png') 100% 30% no-repeat;
+}
+
+@media (max-width: 600px) {
+	.suit {
+		width: 100%;
+		height: auto;
+	}
+	.suits li {
+		float: none;
+	}
+}
